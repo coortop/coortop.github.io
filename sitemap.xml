@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.coor.top/music/index.html</loc>
+    
+    <lastmod>2020-01-07T15:38:51.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.coor.top/music/music.json</loc>
+    
+    <lastmod>2020-01-07T14:56:20.708Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.coor.top/2019/10/09/4/</loc>
     
     <lastmod>2020-01-07T11:14:29.739Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>https://blog.coor.top/gallery/index.html</loc>
     
     <lastmod>2019-12-06T07:00:56.323Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.coor.top/music/index.html</loc>
-    
-    <lastmod>2019-11-02T09:04:29.225Z</lastmod>
     
   </url>
   
