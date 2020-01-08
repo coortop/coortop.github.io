@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.coor.top/message/index.html</loc>
+    
+    <lastmod>2020-01-08T13:59:22.440Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.coor.top/friends/index.html</loc>
     
     <lastmod>2020-01-08T11:38:30.433Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.coor.top/2019/12/06/6/</loc>
     
     <lastmod>2020-01-06T13:18:18.894Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.coor.top/message/index.html</loc>
-    
-    <lastmod>2020-01-06T09:41:36.444Z</lastmod>
     
   </url>
   
