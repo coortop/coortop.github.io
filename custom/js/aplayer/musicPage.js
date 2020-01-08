@@ -1,1 +1,1 @@
-$(function(){var e=new APlayer({container:document.getElementById("aplayer-musicPage"),lrcType:3});$.getJSON("https://api.i-meto.com/meting/api?server=netease&type=playlist&id=35798529",function(t){e.list.add(t)})});
+$(function(){var t=new APlayer({container:document.getElementById("aplayer-musicPage")});$.getJSON("https://blog.coor.top/staticServer/music.json",function(e){t.list.add(e)})});
