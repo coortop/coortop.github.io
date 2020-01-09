@@ -1,1 +1,0 @@
-$(function(){var t=new APlayer({container:document.getElementById("aplayer-musicPage")});$.getJSON("https://blog.coor.top/staticServer/music.json",function(e){t.list.add(e)})});
