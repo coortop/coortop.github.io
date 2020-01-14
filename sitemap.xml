@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.coor.top/about/index.html</loc>
+    
+    <lastmod>2020-01-14T09:41:34.332Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.coor.top/friends/index.html</loc>
+    
+    <lastmod>2020-01-14T04:24:11.825Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.coor.top/message/index.html</loc>
     
     <lastmod>2020-01-09T08:15:33.450Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>https://blog.coor.top/gallery/index.html</loc>
     
     <lastmod>2020-01-09T05:33:03.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.coor.top/friends/index.html</loc>
-    
-    <lastmod>2020-01-08T11:38:30.433Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.coor.top/about/index.html</loc>
-    
-    <lastmod>2020-01-08T05:22:38.179Z</lastmod>
     
   </url>
   
