@@ -24,6 +24,8 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
+  precacheUrls.push('/2020/01/24/8/');
+
   precacheUrls.push('/2020/01/20/7/');
 
   precacheUrls.push('/2019/12/06/6/');
@@ -31,8 +33,6 @@ var precacheUrls = [];
   precacheUrls.push('/2019/10/30/3/');
 
   precacheUrls.push('/2019/10/30/2/');
-
-  precacheUrls.push('/2019/10/17/5/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
