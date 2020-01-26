@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/54658/');
+  precacheUrls.push('/8/');
 
-  precacheUrls.push('/63201/');
+  precacheUrls.push('/7/');
 
-  precacheUrls.push('/53821/');
+  precacheUrls.push('/6/');
 
-  precacheUrls.push('/48736/');
+  precacheUrls.push('/3/');
 
-  precacheUrls.push('/50295/');
+  precacheUrls.push('/2/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
