@@ -18,8 +18,8 @@
   
   <entry>
     <title>谈谈评论系统</title>
-    <link href="https://blog.coor.top/8/"/>
-    <id>https://blog.coor.top/8/</id>
+    <link href="https://blog.coor.top/54658/"/>
+    <id>https://blog.coor.top/54658/</id>
     <published>2020-01-24T04:04:35.000Z</published>
     <updated>2020-01-25T15:05:49.381Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>常用linux命令介绍</title>
-    <link href="https://blog.coor.top/7/"/>
-    <id>https://blog.coor.top/7/</id>
+    <link href="https://blog.coor.top/63201/"/>
+    <id>https://blog.coor.top/63201/</id>
     <published>2020-01-20T07:50:50.000Z</published>
     <updated>2020-01-25T15:05:49.378Z</updated>
     
@@ -68,8 +68,8 @@
   
   <entry>
     <title>java springboot</title>
-    <link href="https://blog.coor.top/6/"/>
-    <id>https://blog.coor.top/6/</id>
+    <link href="https://blog.coor.top/53821/"/>
+    <id>https://blog.coor.top/53821/</id>
     <published>2019-12-06T02:24:02.000Z</published>
     <updated>2020-01-26T13:26:36.990Z</updated>
     
@@ -93,8 +93,8 @@
   
   <entry>
     <title>java io流</title>
-    <link href="https://blog.coor.top/3/"/>
-    <id>https://blog.coor.top/3/</id>
+    <link href="https://blog.coor.top/48736/"/>
+    <id>https://blog.coor.top/48736/</id>
     <published>2019-10-30T05:51:10.000Z</published>
     <updated>2020-01-26T13:25:06.764Z</updated>
     
@@ -120,8 +120,8 @@
   
   <entry>
     <title>java集合类</title>
-    <link href="https://blog.coor.top/2/"/>
-    <id>https://blog.coor.top/2/</id>
+    <link href="https://blog.coor.top/50295/"/>
+    <id>https://blog.coor.top/50295/</id>
     <published>2019-10-30T02:31:26.000Z</published>
     <updated>2020-01-25T15:05:49.373Z</updated>
     
@@ -145,8 +145,8 @@
   
   <entry>
     <title>java ssm框架</title>
-    <link href="https://blog.coor.top/5/"/>
-    <id>https://blog.coor.top/5/</id>
+    <link href="https://blog.coor.top/55387/"/>
+    <id>https://blog.coor.top/55387/</id>
     <published>2019-10-17T05:36:17.000Z</published>
     <updated>2020-01-25T15:05:49.376Z</updated>
     
@@ -170,8 +170,8 @@
   
   <entry>
     <title>java面向对象概念</title>
-    <link href="https://blog.coor.top/4/"/>
-    <id>https://blog.coor.top/4/</id>
+    <link href="https://blog.coor.top/63215/"/>
+    <id>https://blog.coor.top/63215/</id>
     <published>2019-10-09T06:36:58.000Z</published>
     <updated>2020-01-25T15:05:49.375Z</updated>
     
@@ -195,10 +195,10 @@
   
   <entry>
     <title>三级联动</title>
-    <link href="https://blog.coor.top/1/"/>
-    <id>https://blog.coor.top/1/</id>
+    <link href="https://blog.coor.top/56257/"/>
+    <id>https://blog.coor.top/56257/</id>
     <published>2019-10-09T01:58:09.000Z</published>
-    <updated>2020-01-26T13:21:32.025Z</updated>
+    <updated>2020-01-28T06:33:02.759Z</updated>
     
     <content type="html"><![CDATA[<p>下拉列表的三级联动是非常常见的功能，通常用在省市区或年月日，他简化了我们去填写数据的需求，我们来看看它到底是如何实现的。</p><a id="more"></a><h4 id="html代码"><span class="heading-link">HTML代码</span></h4><figure class="highlight html"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">onchange</span>=<span class="string">"changeDate()"</span> <span class="attr">id</span>=<span class="string">"yearSel"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1950</span>;i &lt;= <span class="number">2030</span>;i++)&#123;</span></span><br><span class="line"><span class="javascript"><span class="built_in">document</span>.write(<span class="string">'&lt;option&gt;'</span>+i+<span class="string">'年&lt;/option&gt;'</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">onchange</span>=<span class="string">"changeDate()"</span> <span class="attr">id</span>=<span class="string">"monthSel"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>;i &lt;= <span class="number">12</span>;i++)&#123;</span></span><br><span class="line"><span class="javascript"><span class="built_in">document</span>.write(<span class="string">'&lt;option&gt;'</span>+i+<span class="string">'月&lt;/option&gt;'</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"dateSel"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>;i &lt;= <span class="number">31</span>;i++)&#123;</span></span><br><span class="line"><span class="javascript"><span class="built_in">document</span>.write(<span class="string">'&lt;option&gt;'</span>+i+<span class="string">'日&lt;/option&gt;'</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></div></figure><h4 id="js代码"><span class="heading-link">JS代码</span></h4><figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">changeDate</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">var</span> year = <span class="built_in">parseInt</span>(<span class="built_in">document</span>.getElementById(<span class="string">"yearSel"</span>).value);</span><br><span class="line"><span class="keyword">var</span> month = <span class="built_in">parseInt</span>(<span class="built_in">document</span>.getElementById(<span class="string">"monthSel"</span>).value);</span><br><span class="line"><span class="keyword">var</span> date = <span class="number">31</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span>(month)&#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line"><span class="keyword">if</span>((year%<span class="number">4</span> == <span class="number">0</span>&amp;&amp;year%<span class="number">100</span> == <span class="number">0</span>) || year%<span class="number">400</span> ==<span class="number">0</span>)&#123;</span><br><span class="line">date = <span class="number">29</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">date = <span class="number">28</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line"><span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line"><span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line"><span class="keyword">case</span> <span class="number">11</span>:</span><br><span class="line">date = <span class="number">30</span>;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> dateSel = <span class="built_in">document</span>.getElementById(<span class="string">"dateSel"</span>);</span><br><span class="line"><span class="keyword">var</span> dateTemp = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>;i &lt;= date;i++)&#123;</span><br><span class="line">dateTemp = dateTemp + <span class="string">"&lt;option&gt;"</span>+i+<span class="string">"日&lt;/option&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line">dateSel.innerHTML = dateTemp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure><h4 id="效果图"><span class="heading-link">效果图</span></h4><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="/images/article/1/20191009111621.png"></p>]]></content>
     
