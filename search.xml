@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>命令行操作github语法</title>
+      <link href="/270723632110/"/>
+      <url>/270723632110/</url>
+      
+        <content type="html"><![CDATA[<p>GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</p><a id="more"></a><h4 id="创建仓库并上传代码"><span class="heading-link">创建仓库并上传代码</span></h4><p>1.在github上创建仓库</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="/images/article/10/1.png"></p><p>2.在本地要上传的项目目录使用命令行，建议安装<code>Node.js</code> + <code>Git Base</code>环境，然后使用<code>Git</code>命令行</p><p>3.为项目添加说明文件<br>命令：<code>echo &quot;这里填说明文件里要写的内容&quot; &gt;&gt; README.md</code></p><p>4.建立git仓库<br>命令：<code>git init</code></p><p>5.将项目的所有文件添加到仓库中<br>命令：<code>git add .</code></p><p>6.将说明文件添加到仓库中<br>命令：<code>git add README.md</code></p><p>7.提交到仓库<br>命令：<code>git commit -m &quot;提交记录注释语句&quot;</code></p><p>8.将本地的仓库关联到GitHub，后面的网址改成自己的<br>命令：<code>git remote add origin https://github.com/coortop/test.git</code></p><p>9.上传github之前pull一下，防止团队开发时覆盖别人已更新的代码<br>命令：<code>git pull origin master</code></p><p>10.上传代码到GitHub远程仓库<br>命令：<code>git push -u origin master</code></p><p>中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了。执行完后，如果没有异常，等待执行完就上传成功了。</p><h4 id="更新代码到github"><span class="heading-link">更新代码到github</span></h4><p>1.查看当前的git仓库状态<br>命令：<code>git status</code></p><p>2.更新全部，可自定义要更新要更新的目录<br>命令：<code>git add *</code></p><p>3.添加更新说明<br>命令：<code>git commit -m &quot;更新说明&quot;</code></p><p>4.拉取当前分支最新代码<br>命令：<code>git pull</code></p><p>5.push到远程master分支上<br>命令：<code>git push origin master</code></p><p>不出意外，打开GitHub已经同步了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>单例模式</title>
+      <link href="/40496077429/"/>
+      <url>/40496077429/</url>
+      
+        <content type="html"><![CDATA[<p>单例模式（Singleton Pattern）是 Java 中最简单的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。这种模式涉及到一个单一的类，该类负责创建自己的对象，同时确保只有单个对象被创建。这个类提供了一种访问其唯一的对象的方式，可以直接访问，不需要实例化该类的对象。</p><a id="more"></a><p>优点：<br>1.在内存里只有一个实例，减少了内存的开销，尤其是频繁的创建和销毁实例（比如管理学院首页页面缓存）。<br>2.避免对资源的多重占用（比如写文件操作）。</p><p>缺点：<br>没有接口，不能继承，与单一职责原则冲突，一个类应该只关心内部逻辑，而不关心外面怎么样来实例化。</p><p>单例模式有多种实现方式，这里介绍常用的两种。</p><h4 id="懒汉式"><span class="heading-link">懒汉式</span></h4><p>在方法调用时才实例化对象</p><figure class="highlight java"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject singleObject;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getSingleObject</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (singleObject == <span class="keyword">null</span>) &#123;</span><br><span class="line">            singleObject = <span class="keyword">new</span> SingleObject();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> singleObject;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure><figure class="highlight java"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SingleObject singleObject1 = SingleObject.getSingleObject();</span><br><span class="line">        SingleObject singleObject2 = SingleObject.getSingleObject();</span><br><span class="line"></span><br><span class="line">        System.out.println(singleObject1 == singleObject2);<span class="comment">//输出true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure><h4 id="饿汉式"><span class="heading-link">饿汉式</span></h4><p>在类加载时就实例化对象</p><figure class="highlight java"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject singleObject = <span class="keyword">new</span> SingleObject();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getSingleObject</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> singleObject;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure><figure class="highlight java"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SingleObject singleObject1 = SingleObject.getSingleObject();</span><br><span class="line">        SingleObject singleObject2 = SingleObject.getSingleObject();</span><br><span class="line"></span><br><span class="line">        System.out.println(singleObject1 == singleObject2);<span class="comment">//输出true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 设计模式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谈谈评论系统</title>
       <link href="/546588/"/>
       <url>/546588/</url>
@@ -45,11 +99,11 @@
       
         <tags>
             
+            <tag> 命令 </tag>
+            
             <tag> 系统 </tag>
             
             <tag> 服务器 </tag>
-            
-            <tag> 命令 </tag>
             
         </tags>
       
@@ -58,7 +112,7 @@
     
     
     <entry>
-      <title>java springboot</title>
+      <title>springboot</title>
       <link href="/538216/"/>
       <url>/538216/</url>
       
@@ -85,7 +139,7 @@
     
     
     <entry>
-      <title>java io流</title>
+      <title>io流</title>
       <link href="/487363/"/>
       <url>/487363/</url>
       
@@ -114,7 +168,7 @@
     
     
     <entry>
-      <title>java集合类</title>
+      <title>集合类</title>
       <link href="/502952/"/>
       <url>/502952/</url>
       
@@ -141,7 +195,7 @@
     
     
     <entry>
-      <title>java ssm框架</title>
+      <title>ssm框架</title>
       <link href="/553875/"/>
       <url>/553875/</url>
       
@@ -168,7 +222,7 @@
     
     
     <entry>
-      <title>java面向对象概念</title>
+      <title>面向对象概念</title>
       <link href="/632154/"/>
       <url>/632154/</url>
       
