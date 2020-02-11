@@ -35,11 +35,11 @@
       <category term="java" scheme="https://blog.coor.top/categories/java/"/>
     
     
-      <category term="java" scheme="https://blog.coor.top/tags/java/"/>
-    
       <category term="数据库" scheme="https://blog.coor.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="jdbc" scheme="https://blog.coor.top/tags/jdbc/"/>
+    
+      <category term="java" scheme="https://blog.coor.top/tags/java/"/>
     
   </entry>
   
@@ -48,9 +48,9 @@
     <link href="https://blog.coor.top/4121710/"/>
     <id>https://blog.coor.top/4121710/</id>
     <published>2020-01-30T02:59:33.000Z</published>
-    <updated>2020-02-04T10:18:11.857Z</updated>
+    <updated>2020-02-11T11:42:23.279Z</updated>
     
-    <content type="html"><![CDATA[<p>GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</p><a id="more"></a><h4 id="创建仓库并上传代码"><span class="heading-link">创建仓库并上传代码</span></h4><p>1.在github上创建仓库</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="/images/article/10/1.png"></p><p>2.在本地要上传的项目目录使用命令行，建议安装<code>Node.js</code> + <code>Git Base</code>环境，然后使用<code>Git</code>命令行</p><p>3.为项目添加说明文件<br>命令：<code>echo &quot;这里填说明文件里要写的内容&quot; &gt;&gt; README.md</code></p><p>4.建立git仓库<br>命令：<code>git init</code></p><p>5.将项目的所有文件添加到仓库中<br>命令：<code>git add .</code></p><p>6.将说明文件添加到仓库中<br>命令：<code>git add README.md</code></p><p>7.提交到仓库<br>命令：<code>git commit -m &quot;提交记录注释语句&quot;</code></p><p>8.将本地的仓库关联到GitHub，后面的网址改成自己的<br>命令：<code>git remote add origin https://github.com/coortop/test.git</code></p><p>9.上传github之前pull一下，防止团队开发时覆盖别人已更新的代码<br>命令：<code>git pull origin master</code></p><p>10.上传代码到GitHub远程仓库<br>命令：<code>git push -u origin master</code></p><p>中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了。执行完后，如果没有异常，等待执行完就上传成功了。</p><h4 id="更新代码到github"><span class="heading-link">更新代码到github</span></h4><p>1.查看当前的git仓库状态<br>命令：<code>git status</code></p><p>2.更新全部，可自定义要更新要更新的目录<br>命令：<code>git add *</code></p><p>3.添加更新说明<br>命令：<code>git commit -m &quot;更新说明&quot;</code></p><p>4.拉取当前分支最新代码<br>命令：<code>git pull</code></p><p>5.push到远程master分支上<br>命令：<code>git push origin master</code></p><p>不出意外，打开GitHub已经同步了。</p>]]></content>
+    <content type="html"><![CDATA[<p>GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</p><a id="more"></a><h4 id="创建仓库并上传代码"><span class="heading-link">创建仓库并上传代码</span></h4><p>1.在github上创建仓库</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="/images/article/10/1.png"></p><p>2.在本地要上传的项目目录使用命令行，建议安装<code>Node.js</code> + <code>Git Base</code>环境，然后使用<code>Git</code>命令行</p><p>3.随意找个文件夹执行命令建立git仓库<br>命令：<code>git init</code></p><p>4.将本地的仓库关联到GitHub，后面的网址改成自己的<br>命令：<code>git remote add origin https://github.com/coortop/test.git</code></p><p>5.拉取github上代码<br>命令：<code>git pull origin master</code></p><p>6.修改本地需要修改的文件</p><p>7.将项目的所有文件添加到仓库中<br>命令：<code>git add .</code></p><p>8.提交到仓库<br>命令：<code>git commit -m &quot;提交记录注释语句&quot;</code></p><p>9.提交代码到GitHub远程仓库<br>命令：<code>git push -u origin master</code></p><p>中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了。执行完后，如果没有异常，等待执行完就上传成功了。</p><h4 id="更新代码到github"><span class="heading-link">更新代码到github</span></h4><p>1.随意找个文件夹执行命令建立git仓库（如果本地原仓库不在了）<br>命令：<code>git init</code></p><p>2.将本地的仓库关联到GitHub，后面的网址改成自己的（如果本地原仓库不在了）<br>命令：<code>git remote add origin https://github.com/coortop/test.git</code></p><p>3.拉取github上代码（如果本地原仓库不在了）<br>命令：<code>git pull origin master</code></p><p>4.修改本地需要修改的文件</p><p>5.更新全部<br>命令：<code>git add *</code></p><p>6.添加更新说明<br>命令：<code>git commit -m &quot;更新说明&quot;</code></p><p>7.提交到远程master分支上<br>命令：<code>git push origin master</code></p><p>可能会让你输入Username和Password，不出意外，打开GitHub已经同步了。</p>]]></content>
     
     <summary type="html">
     
