@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.coor.top/"/>
-  <updated>2020-02-12T06:35:05.374Z</updated>
+  <updated>2020-02-08T09:22:41.298Z</updated>
   <id>https://blog.coor.top/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>文章阅读量统计</title>
-    <link href="https://blog.coor.top/3986412/"/>
-    <id>https://blog.coor.top/3986412/</id>
-    <published>2020-02-12T06:33:49.000Z</published>
-    <updated>2020-02-12T06:35:05.374Z</updated>
-    
-    <content type="html"><![CDATA[<p>刚加的文章阅读量统计功能，正在测试…</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;刚加的文章阅读量统计功能，正在测试…&lt;/p&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>完整JDBC操作</title>
