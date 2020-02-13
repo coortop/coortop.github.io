@@ -35,11 +35,11 @@
       <category term="java" scheme="https://blog.coor.top/categories/java/"/>
     
     
+      <category term="java" scheme="https://blog.coor.top/tags/java/"/>
+    
       <category term="数据库" scheme="https://blog.coor.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="jdbc" scheme="https://blog.coor.top/tags/jdbc/"/>
-    
-      <category term="java" scheme="https://blog.coor.top/tags/java/"/>
     
   </entry>
   
@@ -98,7 +98,7 @@
     <link href="https://blog.coor.top/546598/"/>
     <id>https://blog.coor.top/546598/</id>
     <published>2020-01-24T04:04:35.000Z</published>
-    <updated>2020-02-04T10:17:59.780Z</updated>
+    <updated>2020-02-13T06:21:45.038Z</updated>
     
     <content type="html"><![CDATA[<p>网站评论系统用来增加网站用户之间的互动，如果没有互动，那也太枯燥无味了吧。</p><p>目前流行的第三方评论系统有的已经关了，像网易云跟帖，有的被墙，比如Disqus <s>有不用翻墙就能请求的api请留言告诉我~~</s></p><p>剩下能用的有gitalk，gitment，livere，valine，utterances等等</p><a id="more"></a><p>我先说说我试过的吧！</p><h4 id="gitalk"><span class="heading-link">gitalk</span></h4><p>刚开始第一个用的是github的gitalk，gitalk 是一个基于 Github Issue 和 Preact 开发的评论插件。</p><p>它的最大优点就是方便，简单，很适合新手。为什么我放弃他了呢？<br>因为界面不够炫酷，还要github账号登录 <s>这使得大多数非专业it行业路人可能放弃评论</s></p><h4 id="livere"><span class="heading-link">livere</span></h4><p>livere，来必力，一款出自韩国的第三方评论系统，功能强大，系统稳定，支持多个第三方登录方式，比如QQ、微信、百度…</p><p>放弃的原因。界面丑~ <s>颜控党，丑拒</s><br>还有就是，由于服务器不在国内，加载慢</p><h4 id="valine"><span class="heading-link">valine</span></h4><p>界面清爽，国产，加载速度快，不需要账号登录，就是我用的这个</p><p>为什么样子和你用的不一样？<br>因为我自己改了样式主题，但是功能是一样的,想要改的话，修改css样式就行了，自己不会改的话就百度，方法一大堆</p><p>我现在说说valine评论系统中遇到的坑<br>1.为什么评论提交的时候验证关不掉？<br>就是让计算数学题那个，为什么要关掉？<s>太难不会算</s> 为了让操作变得最简单，为用户着想<br>valine属性设置这里<br>notify - 评论之后邮箱通知给站长<br>verify - 提交验证<br>如果notify是true的话，无论verify是true还是false都会强制开启验证，为了防止垃圾评论一直给站长邮箱发通知<br>要想关闭评论验证就得把notify和verify都设置才false</p><p>2.要想用邮箱通知有不想有评论验证怎么办？<br>当然有办法，<a href="https://github.com/DesertsP/Valine-Admin" target="_blank" rel="noopener" title="点击打开">Valine-Admin</a>，Valine 评论系统的扩展和增强，主要实现评论邮件通知、评论管理、垃圾评论过滤等功能。支持完全自定义的邮件通知模板。基于Akismet API实现准确的垃圾评论过滤。此外，使用云函数等技术解决了免费版云引擎休眠问题，支持云引擎自动唤醒，漏发邮件自动补发。兼容云淡风轻及Deserts维护的多版本Valine。</p><p>3.最重要的是我自己在使用valine的时候出现了一个bug<br>当开启全站pjax的时候，遇到切换页面不把评论刷新成当前访问页面的评论内容<br>bug原因：<br><a href="https://valine.js.org/configuration.html#path" target="_blank" rel="noopener">valine.js.org</a>，这是valine的官方文档，点击查看配置项path属性<br>关于path属性，作用是用于区分不同的文章页，以保证正确读取该文章页下的评论列表。<br>官方文档上写的是非必要配置项，默认值为<code>window.location.pathname</code>,但是经过自己的实验，他这个默认值没起作用<br>解决办法：<br>手动添加<code>path: window.location.pathname</code>配置</p><figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Valine(&#123;</span><br><span class="line">      el: <span class="string">'#valine-container'</span>,</span><br><span class="line">      appId: <span class="string">'你的id'</span>,</span><br><span class="line">      appKey: <span class="string">'你的key'</span>,</span><br><span class="line">      ......</span><br><span class="line">      lang: <span class="string">'zh-cn'</span>,</span><br><span class="line">      path: <span class="built_in">window</span>.location.pathname</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></div></figure><p>目前就体验过这三款，感觉valine挺不错的。</p>]]></content>
     
@@ -109,7 +109,7 @@
     </summary>
     
     
-      <category term="闲聊" scheme="https://blog.coor.top/categories/%E9%97%B2%E8%81%8A/"/>
+      <category term="闲言碎语" scheme="https://blog.coor.top/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
     
     
       <category term="评论" scheme="https://blog.coor.top/tags/%E8%AF%84%E8%AE%BA/"/>
