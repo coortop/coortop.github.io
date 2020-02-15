@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.coor.top/"/>
-  <updated>2020-02-14T08:02:10.451Z</updated>
+  <updated>2020-02-08T09:22:41.298Z</updated>
   <id>https://blog.coor.top/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>阿里云oss搭建图床</title>
-    <link href="https://blog.coor.top/5886712/"/>
-    <id>https://blog.coor.top/5886712/</id>
-    <published>2020-02-14T04:47:29.000Z</published>
-    <updated>2020-02-14T08:02:10.451Z</updated>
-    
-    <content type="html"><![CDATA[<p>当我们网站图片使用达到一定数量时，我们就有必要有一个统一管理图片的仓库了，专门用来存放图片的仓库我们一般称之为图床</p><p>拥有自己的图床的好处主要是方便管理图片，也有专门提供图床的服务商，不过好一点的是需要付费的，免费的图床又不方便图片管理，我用的阿里云oss搭建，成本一年9块，当然也可以使用其他免费的服务商~</p><a id="more"></a><h4 id="需要准备的工具"><span class="heading-link">需要准备的工具</span></h4><p>1.阿里云账号<br>2.9块钱<br>3.图片上传工具PicGo</p><h4 id="搭建步骤"><span class="heading-link">搭建步骤</span></h4><p>1.登录阿里云账号，进入控制台搜索oss，进入oss对象存储面板</p><p>2.在oss对象存储面板左边列表找到资源包管理点击购买资源包</p><p>3.购买资源包，这就是唯一需要花费硬币的地方</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="https://cdn.coor.top/blog/article/12/1220200214134459.png"></p><p>4.返回oss面板，在左边列表点击 Bucket 列表，创建 Bucket</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="https://cdn.coor.top/blog/article/12/121220200214135653.png"></p><p>5.在oss面板概述里找到AccessKey获取KeyID和KeySecret，一会儿PicGo工具里要用</p><p>6.目前其实已经可以使用了，不过为了不需要每次上传文件都要登录阿里云，我们需要下载<a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener" title="点击跳转下载界面">PicGo</a>图片上传工具</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="https://cdn.coor.top/blog/article/12/20200214143220.png"></p><p>7.打开PicGo，图床设置里设置阿里云oss，按自己的实际资料填写</p><p>设定存储空间名：你在阿里云自己创建的Bucket名称<br>确认存储区域：不会写的话，点进自己的Bucket空间，地址栏里就有<br>指定存储路径：在Bucket里图片准备存储的目录，不填表示根目录<br>设定自定义域名：如果你在阿里云Bucket里绑定了自己的域名，就填写自己的域名</p><p><img src="/images/loading.svg" alt class="lazyload gif" data-src="https://cdn.coor.top/blog/article/12/20200214143453.png"></p><p>截止目前，搭建已经完成，其他具体使用方法我就不在文章里啰嗦了，有不会的地方可以在下面评论区留言~</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;当我们网站图片使用达到一定数量时，我们就有必要有一个统一管理图片的仓库了，专门用来存放图片的仓库我们一般称之为图床&lt;/p&gt;&lt;p&gt;拥有自己的图床的好处主要是方便管理图片，也有专门提供图床的服务商，不过好一点的是需要付费的，免费的图床又不方便图片管理，我用的阿里云oss搭建，成本一年9块，当然也可以使用其他免费的服务商~&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="工具" scheme="https://blog.coor.top/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="图床" scheme="https://blog.coor.top/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-      <category term="工具" scheme="https://blog.coor.top/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
   
   <entry>
     <title>完整JDBC操作</title>
