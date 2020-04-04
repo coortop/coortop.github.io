@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog2.coor.top/"/>
-  <updated>2020-02-08T09:22:41.298Z</updated>
+  <updated>2020-04-04T06:10:46.650Z</updated>
   <id>http://blog2.coor.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>站点公告</title>
+    <link href="http://blog2.coor.top/4834612/"/>
+    <id>http://blog2.coor.top/4834612/</id>
+    <published>2020-03-25T06:03:54.000Z</published>
+    <updated>2020-04-04T06:10:46.650Z</updated>
+    
+    <content type="html"><![CDATA[<p>当前博客站点已不再维护</p><p>新博客为 <a href="https://blog.coor.top" target="_blank" rel="noopener">https://blog.coor.top</a><br>导航主页 <a href="https://www.coor.top" target="_blank" rel="noopener">https://www.coor.top</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;当前博客站点已不再维护&lt;/p&gt;&lt;p&gt;新博客为 &lt;a href=&quot;https://blog.coor.top&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.coor.top&lt;/a&gt;&lt;br&gt;导航主页 &lt;a href=&quot;https://
+      
+    
+    </summary>
+    
+    
+      <category term="公告" scheme="http://blog2.coor.top/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+      <category term="公告" scheme="http://blog2.coor.top/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>完整JDBC操作</title>
@@ -35,11 +61,11 @@
       <category term="java" scheme="http://blog2.coor.top/categories/java/"/>
     
     
-      <category term="java" scheme="http://blog2.coor.top/tags/java/"/>
-    
       <category term="数据库" scheme="http://blog2.coor.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="jdbc" scheme="http://blog2.coor.top/tags/jdbc/"/>
+    
+      <category term="java" scheme="http://blog2.coor.top/tags/java/"/>
     
   </entry>
   

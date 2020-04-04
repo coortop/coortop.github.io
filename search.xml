@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>站点公告</title>
+      <link href="/4834612/"/>
+      <url>/4834612/</url>
+      
+        <content type="html"><![CDATA[<p>当前博客站点已不再维护</p><p>新博客为 <a href="https://blog.coor.top" target="_blank" rel="noopener">https://blog.coor.top</a><br>导航主页 <a href="https://www.coor.top" target="_blank" rel="noopener">https://www.coor.top</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 公告 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 公告 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>完整JDBC操作</title>
       <link href="/2359011/"/>
       <url>/2359011/</url>
@@ -20,11 +45,11 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> 数据库 </tag>
             
             <tag> jdbc </tag>
+            
+            <tag> java </tag>
             
         </tags>
       
